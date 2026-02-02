@@ -262,7 +262,7 @@ Was möchten Sie wissen? Ich kann Ihnen erklären:
     setIsLoading(true);
 
     try {
-      const systemPrompt = `Du bist der KI-Berater von KlarAI, einer Agentur die KMUs bei der Automatisierung von Bürokratie hilft.
+      const systemPrompt = `Du bist der KI-Berater von KlarAI, einer Agentur die KMUs zeigt, wie sie KI praktisch nutzen können.
 
 Kontext zum Lead:
 - Quiz-Score: ${score}%
@@ -464,7 +464,7 @@ export default function KlarAILanding() {
               onClick={() => setStage('quiz')}
               className="px-4 py-2 text-sm bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 rounded-lg transition-colors"
             >
-              Bürokratie-Check →
+              KI-Check →
             </button>
           )}
         </div>
@@ -484,16 +484,16 @@ export default function KlarAILanding() {
                 </div>
                 
                 <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                  Bürokratie frisst
+                  Alle fragen sich,
                   <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-emerald-300">
-                    Ihre besten Leute
+                    wie sie KI nutzen können
                   </span>
                 </h1>
                 
                 <p className="text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
-                  Deutsche KMUs verlieren durchschnittlich <span className="text-white font-medium">23 Stunden pro Woche</span> an Routineaufgaben. 
-                  Wir finden, was Sie übersehen – und automatisieren es.
+                  Wir zeigen es Ihnen. Konkret, praxisnah, mit echten Ergebnissen – 
+                  <span className="text-white font-medium"> maßgeschneidert für Ihr Unternehmen.</span>
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
@@ -501,7 +501,7 @@ export default function KlarAILanding() {
                     onClick={() => setStage('quiz')}
                     className="group px-8 py-4 bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-semibold rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/25 flex items-center justify-center gap-2"
                   >
-                    Kostenlosen Bürokratie-Check starten
+                    Kostenlosen KI-Check starten
                     <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
@@ -527,10 +527,10 @@ export default function KlarAILanding() {
               <div className="max-w-6xl mx-auto px-6 py-16">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                   {[
-                    { number: '67%', label: 'der KMUs kämpfen mit Bürokratie' },
-                    { number: '23h', label: 'pro Woche für Routineaufgaben' },
-                    { number: '42.000€', label: 'durchschnittliche Jahreskosten' },
-                    { number: '73%', label: 'wären automatisierbar' },
+                    { number: '73%', label: 'der Prozesse sind automatisierbar' },
+                    { number: '2-3h', label: 'bis zur ersten KI-Lösung' },
+                    { number: '10x', label: 'schneller als manuelle Arbeit' },
+                    { number: '0€', label: 'für den ersten Audit' },
                   ].map((stat, i) => (
                     <div key={i} className="text-center">
                       <p className="text-3xl md:text-4xl font-bold text-emerald-400">{stat.number}</p>
@@ -603,7 +603,7 @@ export default function KlarAILanding() {
                 </h2>
                 <div className="space-y-8">
                   {[
-                    { step: '01', title: 'Bürokratie-Check', desc: '5 Fragen zeigen Ihr Automatisierungspotenzial' },
+                    { step: '01', title: 'KI-Potenzial-Check', desc: '5 Fragen zeigen Ihre Automatisierungschancen' },
                     { step: '02', title: 'Kostenloses Audit', desc: '2-3 Stunden Prozessanalyse vor Ort oder remote' },
                     { step: '03', title: 'Maßgeschneiderte Lösung', desc: 'Konkrete KI-Tools für Ihre größten Zeitfresser' },
                     { step: '04', title: 'Fortlaufende Optimierung', desc: 'Monatliche SaaS-Gebühr, nur für nachgewiesene Ersparnis' },
@@ -624,16 +624,16 @@ export default function KlarAILanding() {
             <section className="border-t border-slate-800/50">
               <div className="max-w-4xl mx-auto px-6 py-20 text-center">
                 <h2 className="text-3xl font-bold mb-4">
-                  Bereit, Ihre Bürokratie zu automatisieren?
+                  Bereit, KI für sich arbeiten zu lassen?
                 </h2>
                 <p className="text-slate-400 mb-8">
-                  Starten Sie mit dem kostenlosen Bürokratie-Check. 2 Minuten, sofort Ergebnis.
+                  Starten Sie mit dem kostenlosen KI-Check. 2 Minuten, sofort Ergebnis.
                 </p>
                 <button
                   onClick={() => setStage('quiz')}
                   className="px-8 py-4 bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-semibold rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/25"
                 >
-                  Bürokratie-Check starten →
+                  KI-Check starten →
                 </button>
               </div>
             </section>
